@@ -135,4 +135,9 @@ class Comment
     {
         $this->post = $post;
     }
+
+    public function __toString(): string
+    {
+        return $this->content;
+    }
 }
